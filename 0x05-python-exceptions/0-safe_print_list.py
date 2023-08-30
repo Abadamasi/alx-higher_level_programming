@@ -4,13 +4,12 @@ def safe_print_print(my_list=[], x=0):
     count = 0
     
     try:
-        for i in range(x):
-        print(my_list[i], end=" ")
-
+        while count < x:
+        print(my_list[count], end=" ")
         count += 1
+
     except IndexError:
         pass 
 
     print()
-
     return count 
